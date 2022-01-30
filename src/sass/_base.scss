@@ -1,0 +1,87 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: $background-color;
+    color: $white-color;
+}
+.App{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: $primary-color;
+    color: $white-color;
+    font-size: 20px;
+    box-shadow: 0 0  10px 3px $primary-color;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+h3{
+    // padding-top: 20px;
+    // padding-bottom: 10px;
+    font-weight: 600;
+}
+.text-link{
+    color: inherit;
+    text-decoration: none;
+}
+.header-bg{
+    height: 500px;
+}
+.background{
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    position: relative;
+    &:after{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.3), $background-color 80%);
+    }
+}
+@media screen and (max-width: 1024px){
+    .background{
+        background-size: auto 40vh;
+        &:after{
+            height: 40vh;
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .background{
+        background-size: auto 50vh;
+        &:after{
+            height: 50vh;
+        }
+    }
+}

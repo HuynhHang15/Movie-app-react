@@ -1,0 +1,163 @@
+.header{
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all .3s;
+    & .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &.shrink{
+        background: $background-color;
+    }
+    &-icon{
+        display: none;
+    }
+    &-name.name-user{
+       display: none;
+    }
+    &-nav{
+        display: flex;
+        gap: 0 20px;
+        font-size: 18px;
+        & li{
+            padding: 3px 0;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 2px;
+                transition: all 0.3s;
+                background: $primary-color;
+            }
+            &.active:after,
+            &:hover:after{
+                width: 100%;
+            }
+        }
+    }
+    &-right{
+        display: flex;
+        gap: 0 20px;
+        justify-content: center;
+        align-items: center;
+        & .search{
+            font-size: 20px;
+            cursor: pointer;
+            position: relative;
+            width: 40px;
+            overflow: hidden;
+            border-radius: 20px;
+            transition: all .3s;
+            &.active{
+                width: 180px;
+                & input{
+                    background: $rgba;
+                    opacity: 1;
+                }
+            }
+            & input{
+                padding: 10px 15px;
+                background: none;
+                border: none;
+                font-size: 16px;
+                border-radius: 20px;
+                color: $white-color;
+                transition: all 0.3s ;
+                outline: none;
+                opacity: 0;
+            }
+            & i{
+                position: absolute;
+                right: 5px;
+                top: 8px;
+            }
+        }
+        & .avatar{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .header{
+        &-right{
+            position: absolute;
+            top: 0px;
+            right: 10px;
+        }
+        &-nav{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: $background-color;
+            padding: 5px 0;
+        }
+        &-name{
+            display: none;
+            position: absolute;
+            text-align: center;
+        }
+        &-icon{
+            display: block;
+            font-size: 36px;
+            color: $gray-color;
+        }
+        & li{
+            width: calc(100% / 4);
+            transition: all .3s;
+            & .text-link{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+            }
+            &:after{
+                display: none;
+            }
+            &.active {
+                & .header-name{
+                    &.name-user{
+                        display: block;
+                    }
+                    display: block;
+                }
+                & .header-icon{
+                    color: $white-color;
+                    font-size: 30px;
+                    transition: all .3s;
+                    transform: translateY(-30px);
+                    position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        width: 60px;
+                        height: 60px;
+                        top: -5px;
+                        left: -15px;
+                        border-radius: 50%;
+                        background:$background-color;
+                        z-index: -2;
+                    }
+                }
+            }
+        }
+    }
+}

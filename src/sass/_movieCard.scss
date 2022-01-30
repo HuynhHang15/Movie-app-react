@@ -1,0 +1,35 @@
+.movie-card{
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s all;
+    overflow: hidden;
+    & img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    &-title{
+        font-size: 14px;
+        font-weight: 500;
+        padding-bottom: 10px;
+        & span{
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient:vertical;
+            overflow: hidden;
+        }
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    &-vote{
+        font-size: 12px;
+        & i{
+            color: $yellow-color;
+            margin-right: 5px;
+            padding: 10px 0;
+        }
+    }
+    &:hover{
+        transform: scale(1.1);
+    }
+}

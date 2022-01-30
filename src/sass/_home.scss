@@ -1,0 +1,16 @@
+.list-section{
+    margin-top: -40vh;
+}
+.section-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & i{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .list-section{
+        margin-top: -80px; 
+    }
+}

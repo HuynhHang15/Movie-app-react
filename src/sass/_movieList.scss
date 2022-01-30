@@ -1,0 +1,49 @@
+.movie-list{
+    & .swiper-slide{
+        width: 15%;
+    }
+    & .swiper{
+        padding: 25px 0 20px 10px;
+        position: relative;
+        width: 100%;
+        & .movie-list-title{
+            & h3{
+                position: absolute;
+                top:0px;
+                left: 0;
+            }
+            & i{
+                font-size: 30px;
+                position: absolute;
+                top:0px;
+                right: 0;
+            }
+        }
+    }
+    & .swiper-wrapper{
+        overflow: hidden;
+        overflow-x: auto;
+        padding-top: 20px;
+        padding-left: 10px;
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+    }
+}
+@media screen  and (max-width: 1024px){
+    .movie-list{
+        & .swiper-slide{
+            width: 30%;
+        }
+    }
+    .movie-card:hover{
+        transform: scale(1);
+    }
+}
+@media screen  and (max-width: 767px){
+    .movie-list{
+        & .swiper-slide{
+            width: 40%;
+        }
+    }
+}
