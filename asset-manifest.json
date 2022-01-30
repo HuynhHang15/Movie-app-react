@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Movie-app-react/static/css/main.81e907de.css",
+    "main.js": "/Movie-app-react/static/js/main.ca237042.js",
+    "static/media/footer.jpg": "/Movie-app-react/static/media/footer.be6b9065f45815dc23b5.jpg",
+    "static/media/avatar.png": "/Movie-app-react/static/media/avatar.0aa12b026e50c7239315.png",
+    "index.html": "/Movie-app-react/index.html",
+    "main.81e907de.css.map": "/Movie-app-react/static/css/main.81e907de.css.map",
+    "main.ca237042.js.map": "/Movie-app-react/static/js/main.ca237042.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81e907de.css",
+    "static/js/main.ca237042.js"
+  ]
+}
