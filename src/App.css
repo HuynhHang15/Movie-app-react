@@ -208,10 +208,11 @@ h3 {
     display: none;
     position: absolute;
     text-align: center;
+    font-size: 14px;
   }
   .header-icon {
     display: block;
-    font-size: 36px;
+    font-size: 24px;
     color: #565656;
   }
   .header li {
@@ -237,20 +238,21 @@ h3 {
   }
   .header li.active .header-icon {
     color: #eaebf4;
-    font-size: 30px;
+    font-size: 20px;
     transition: all 0.3s;
-    transform: translateY(-30px);
+    transform: translateY(-20px);
     position: relative;
   }
   .header li.active .header-icon:after {
     content: "";
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     top: -5px;
-    left: -15px;
+    left: -14px;
     border-radius: 50%;
     background: #0e0f15;
+    background-color: red;
     z-index: -2;
   }
 }
