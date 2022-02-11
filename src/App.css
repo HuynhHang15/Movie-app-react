@@ -293,13 +293,8 @@ h3 {
   right: 0;
 }
 .movie-list .swiper-wrapper {
-  overflow: hidden;
-  overflow-x: auto;
   padding-top: 20px;
   padding-left: 10px;
-}
-.movie-list .swiper-wrapper::-webkit-scrollbar {
-  width: 0;
 }
 
 @media screen and (max-width: 1024px) {

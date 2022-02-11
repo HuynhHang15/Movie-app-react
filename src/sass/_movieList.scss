@@ -21,13 +21,13 @@
         }
     }
     & .swiper-wrapper{
-        overflow: hidden;
-        overflow-x: auto;
+        // overflow: hidden;
+        // overflow-x: auto;
         padding-top: 20px;
         padding-left: 10px;
-        &::-webkit-scrollbar{
-            width: 0;
-        }
+        // &::-webkit-scrollbar{
+        //     width: 0;
+        // }
     }
 }
 @media screen  and (max-width: 1024px){
